@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Un site ultra-moderne expliquant la chiralité en chimie et biologie avec animations dynamiques et un design épuré.">
+    <title>Chiralité - Comprendre les Enantiomères</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #121212;
+            color: #E0E0E0;
+            line-height: 1.6;
+            overflow-x: hidden;
+            padding: 0;
+        }
+
+        /* Header */
+        header {
+            background-color: #1F1F1F;
+            color: #F5A623;
+            padding: 50px 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
+        }
+
+        header:hover {
+            background-color: #F5A623;
+            color: #1F1F1F;
+            transform: scale(1.05);
+        }
+
+        h1 {
+            font-size: 3rem;
+            letter-spacing: 1px;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 40px;
+            margin: 20px auto;
+            max-width: 900px;
+            background-color: #1E1E1E;
+            border-radius: 10px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 1.2s forwards;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #F5A623;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #BDBDBD;
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        ul {
+            margin-left: 20px;
+            list-style: disc;
+            color: #BDBDBD;
+        }
+
+        ul li {
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        /* Animation */
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #1F1F1F;
+            color: #F5A623;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 0.9rem;
+        }
+
+        /* Button Styles */
+        .btn {
+            display: inline-block;
+            background-color: #F5A623;
+            color: #1F1F1F;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s ease-in-out;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            background-color: #FF8C00;
+            transform: translateY(-3px);
+        }
+
+        /* Smooth Scroll for anchor links */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            h2 {
+                font-size: 1.8rem;
+            }
+
+            section {
+                padding: 30px;
+            }
+
+            footer {
+                font-size: 0.8rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.6rem;
+            }
+
+            section {
+                padding: 20px;
+            }
+
+            footer {
+                font-size: 0.7rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Chiralité : La Magie des Enantiomères</h1>
+</header>
+
+<section>
+    <h2>Qu'est-ce que la Chiralité ?</h2>
+    <p>
+        La chiralité est un concept fondamental en chimie qui fait référence à une propriété géométrique des objets ou molécules. Un objet est chirale si son image miroir n'est pas superposable à lui-même. Autrement dit, il existe des formes qui se ressemblent mais ne peuvent pas être superposées, comme les mains humaines.
+    </p>
+    <p>
+        En chimie, les molécules chirales ont souvent deux versions : les <strong>énantiomères</strong>, qui sont l'image miroir l'une de l'autre. Cela s'avère particulièrement important dans le domaine pharmaceutique, où la différence entre ces énantiomères peut avoir des conséquences majeures.
+    </p>
+</section>
+
+<section>
+    <h2>Pourquoi la Chiralité Est-elle Cruciale ?</h2>
+    <p>
+        La chiralité n'est pas seulement une curiosité théorique, mais elle a des applications pratiques considérables. Par exemple, dans les médicaments, un énantiomère peut être thérapeutiquement actif tandis que l'autre peut être totalement inactif ou même toxique. Cela peut être la différence entre un médicament qui sauve des vies et un médicament qui provoque des effets secondaires graves.
+    </p>
+    <p>
+        Un exemple tragique est celui du thalidomide, où un énantiomère était efficace contre les nausées pendant la grossesse, mais l'autre causait des malformations congénitales. Ce cas montre l'importance de comprendre la chiralité dans la conception de médicaments.
+    </p>
+</section>
+
+<section>
+    <h2>Exemples de Chiralité</h2>
+    <ul>
+        <li><strong>ADN :</strong> La double hélice de l'ADN est une structure chirale. Elle est formée d'une hélice droite, une caractéristique chirale clé dans le stockage de l'information génétique.</li>
+        <li><strong>Acides aminés :</strong> Les protéines, constituées d'acides aminés, sont faites à partir d'acides aminés chiraux de type L, qui sont les composants de base de la vie.</li>
+        <li><strong>Pharmacie :</strong> De nombreux médicaments comme le méthylphénidate (Ritaline) ont des effets très différents selon qu'ils sont sous leur forme droite ou gauche.</li>
+        <li><strong>Sucres :</strong> Le glucose, une molécule essentielle à la vie, est également chirale, et sa forme D est celle que nous utilisons dans le métabolisme.</li>
+    </ul>
+    <a href="https://fr.wikipedia.org/wiki/Chiralité" class="btn" target="_blank">En savoir plus sur la Chiralité</a>
+</section>
+
+<section>
+    <h2>Comment Détecter la Chiralité ?</h2>
+    <p>
+        La chiralité peut être détectée par différentes techniques scientifiques. L'une des méthodes les plus courantes est la <strong>polarimétrie</strong>, qui mesure l'angle de rotation de la lumière polarisée lorsqu'elle traverse une solution contenant une molécule chirale. En fonction de la direction dans laquelle la lumière est déviée, on peut déterminer l'énantiomère présent.
+    </p>
+    <p>
+        La <strong>spektroscopie RMN</strong> (Résonance Magnétique Nucléaire) est également utilisée pour analyser les molécules chirales à l'échelle atomique, en détectant les différences subtiles entre les énantiomères.
+    </p>
+</section>
+
+<footer>
+    <p>&copy; 2024 Chiralité. Design moderne et épuré. Tous droits réservés.</p>
+</footer>
+
+</body>
+</html>
